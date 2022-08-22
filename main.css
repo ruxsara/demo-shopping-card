@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    overflow: hidden;
+    position: relative;
+    transition: 500ms all;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    transition: 300ms all;
+}
+
+.overlay {
+    width: 100%;
+    height: 200px;
+    left: 0;
+    bottom: -100px;
+    position: absolute;
+    background-color: #000;
+    color: cornsilk;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    opacity: 0;
+    transition: 500ms all;
+}
+
+span {
+    color: rgb(214, 248, 244);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+p {
+    text-align: right;
+}
+
+a {
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+.box:hover .overlay {
+    bottom: 0;
+    opacity: 0.7;
+}
+
+.box:hover img {
+    transform: scale(1.2);
+}
